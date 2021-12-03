@@ -1,5 +1,5 @@
-from date import Date
-from scraper import Scraper
+from .date import Date
+from .scraper import Scraper
 
 print('Welcome to this mock package')
 print('Introduce a date and I will print a list of celebrities that were born that day')

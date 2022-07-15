@@ -64,6 +64,6 @@ class Scraper:
             date = 'January_1'
         cel_list = self._get_celebrity_list(date)
         celebrities = []
-        for li in cel_list:  
+        for li in cel_list:
             celebrities.append(self._clean_li(li))
         return celebrities

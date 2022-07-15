@@ -72,13 +72,11 @@ class Date:
         if self.year < other.year:
             return True
 
-        if self.year == other.year:
-            if self.month < other.month:
-                return True
+        if self.year == other.year and self.month < other.month:
+            return True
 
-            if self.month == other.month:
-                if self.day < other.day:
-                    return True
+        if self.year == other.year and self.month == other.month and self.day < other.day:
+            return True
 
         return False
 
@@ -110,8 +108,8 @@ class Date:
         if self.is_leap_year(year) and month == 2:
             current_day += 1
 
-        return year >= 0 and month >= 1 and month <= 12 and \
-            day >= 1 and day <= current_day
+        return year >= 0 and 1 <= month <= 12 and \
+            1 <= day <= current_day
 
     @classmethod
     def from_string(cls, date_as_string):

@@ -11,4 +11,4 @@ scraper = Scraper()
 celebrities = scraper.get_celebrities(date)
 for i in celebrities:
     print(i)
-    
+

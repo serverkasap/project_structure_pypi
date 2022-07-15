@@ -71,11 +71,11 @@ class Date:
         '''
         if self.year < other.year:
             return True
-   
+
         if self.year == other.year:
             if self.month < other.month:
                 return True
-        
+
             if self.month == other.month:
                 if self.day < other.day:
                     return True

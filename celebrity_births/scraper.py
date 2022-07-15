@@ -29,7 +29,7 @@ class Scraper:
             raise ValueError('The given date has no birth data')
         h2 = span.find_parent()
         return h2
-    
+
     def _get_celebrity_list(self, date: str) -> list:
         # Add <ul> tags until you find the next <h2> tag
         next_node = self._get_birth_header(date)
@@ -66,4 +66,4 @@ class Scraper:
         for li in cel_list:            
             celebrities.append(self._clean_li(li))
         return celebrities
-    
+

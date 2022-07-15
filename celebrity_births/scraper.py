@@ -42,7 +42,7 @@ class Scraper:
                 break
         return celebrities_list
 
-    def _clean_li(self, li:BeautifulSoup) -> str:
+    def _clean_li(self, li: BeautifulSoup) -> str:
         # Private method
         li_complete = li.text.split('–')
         name_complete = li_complete[1].split(',')

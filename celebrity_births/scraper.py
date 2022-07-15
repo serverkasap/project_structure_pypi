@@ -66,3 +66,4 @@ class Scraper:
         for li in cel_list:            
             celebrities.append(self._clean_li(li))
         return celebrities
+    

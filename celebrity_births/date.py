@@ -76,7 +76,8 @@ class Date:
         if self.year == other.year and self.month < other.month:
             return True
 
-        if self.year == other.year and self.month == other.month and self.day < other.day:
+        if self.year == other.year and self.month == other.month \
+        and self.day < other.day:
             return True
 
         return False

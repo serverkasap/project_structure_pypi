@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class Date:
     '''
     This class is used to represent a date.

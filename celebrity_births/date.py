@@ -7,7 +7,7 @@ class Date:
 
     Attributes:
         _day_of_month (tuple): The days in each month of the year
-        _month_str = 
+        _month_str =
         year (int): The year of the date.
         month (int): The month of the date.
         day (int): The day of the date.
@@ -77,7 +77,7 @@ class Date:
             return True
 
         if self.year == other.year and self.month == other.month \
-        and self.day < other.day:
+            and self.day < other.day:
             return True
 
         return False

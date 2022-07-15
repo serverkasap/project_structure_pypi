@@ -2,6 +2,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
+
 class Scraper:
     '''
     Extract the celebrities that were born in a certain date
